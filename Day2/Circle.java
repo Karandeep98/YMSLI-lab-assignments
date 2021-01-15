@@ -3,21 +3,20 @@ public class Circle {
 	private double radius;
 	private String color;
 
-	public Circle() {
-		radius = 1.0;
-		color = "red";
-	}
-
-	public Circle(double r) {
-		radius = r;
-		color = "red";
-	}
-
 	public double getRadius() {
 		return radius;
 	}
 
-	public double getArea() {
-		return Math.PI * radius * radius;
+	public String getColor() {
+		return color;
+	}
+
+	public Circle() {
+	}
+
+	public Circle(double radius, String color) {
+
+		this.radius = radius;
+		this.color = color;
 	}
 }
